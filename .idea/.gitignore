@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# SSL
+cert.pem
+key.pem
+_ssl.cfg
+
+# Python
+__pycache__/
+*.pyc
+
+# Optional
+serve.py
