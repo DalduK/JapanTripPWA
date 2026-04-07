@@ -1,0 +1,23 @@
+{
+  "name": "Japonia 2025 🌸",
+  "short_name": "Japonia",
+  "description": "Plan podróży Japonia",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0608",
+  "theme_color": "#0f0608",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
