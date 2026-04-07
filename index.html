@@ -180,6 +180,7 @@ body{background:var(--night);color:var(--paper);font-family:'DM Sans',sans-serif
   <button class="ttab" onclick="showPage('tokyo',this)">🏙 Tokyo</button>
   <button class="ttab" onclick="showPage('nagoya',this)">🏯 Nagoya</button>
   <button class="ttab" onclick="showPage('checklist',this)">✅ Lista</button>
+  <button class="ttab" onclick="showPage('celiakia',this)">🌾 Celiakia</button>
 </nav>
 
 <!-- ═══ HOME ═══ -->
@@ -504,6 +505,109 @@ body{background:var(--night);color:var(--paper);font-family:'DM Sans',sans-serif
   <div style="text-align:center;padding:18px;font-size:12px;color:var(--muted)">Dotknij pozycję aby oznaczyć ✓<br><span style="font-size:10.5px">Postęp zapisywany automatycznie</span></div>
 </section>
 
+
+<!-- ═══ CELIAKIA ═══ -->
+<section id="page-celiakia" class="page">
+
+  <!-- Nagłówek karty -->
+  <div style="background:linear-gradient(135deg,#f5a623,#f0c040);border-radius:16px;padding:20px 18px 16px;margin-bottom:16px;text-align:center;position:relative;overflow:hidden">
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:6px">
+      <div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;font-size:22px;border:2px solid rgba(255,255,255,0.5)">🌾</div>
+      <div>
+        <div style="font-family:'Noto Serif JP';font-size:26px;font-weight:400;color:#fff;letter-spacing:2px;text-shadow:0 1px 3px rgba(0,0,0,0.2)">セリアック病</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.9);letter-spacing:3px;font-weight:500">CELIAC DISEASE</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Główna wiadomość -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:14px;text-align:center">
+    <div style="font-family:'Noto Serif JP';font-size:19px;color:#e05a2b;font-weight:400;line-height:1.6;margin-bottom:8px">
+      私はグルテンを摂取できません。<br>少量でも体調を崩します。
+    </div>
+    <div style="font-size:12.5px;color:var(--soft);line-height:1.6;border-top:1px solid var(--border);padding-top:10px;margin-top:6px">
+      Nie mogę spożywać glutenu.<br>Nawet niewielka ilość powoduje u mnie dolegliwości zdrowotne.
+    </div>
+  </div>
+
+  <!-- Pytanie -->
+  <div style="background:var(--card);border:1px solid rgba(240,192,64,0.3);border-radius:14px;padding:16px 18px;margin-bottom:14px;display:flex;align-items:flex-start;gap:13px">
+    <div style="width:36px;height:36px;background:#f5a623;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px">?</div>
+    <div>
+      <div style="font-family:'Noto Serif JP';font-size:17px;color:#f5a623;line-height:1.5;margin-bottom:4px">こちらはグルテンを<br>含んでいますか?</div>
+      <div style="font-size:13px;font-weight:500;color:var(--paper)">Does this food contain gluten?</div>
+      <div style="font-size:11.5px;color:var(--soft);margin-top:2px">Czy to jedzenie zawiera gluten?</div>
+    </div>
+  </div>
+
+  <!-- Dwie kolumny: źródła i pokarmy -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+
+    <!-- Źródła glutenu -->
+    <div style="background:var(--card);border:1px solid rgba(240,192,64,0.25);border-radius:12px;padding:13px">
+      <div style="font-size:10px;letter-spacing:1.5px;color:#f5a623;text-transform:uppercase;margin-bottom:10px;font-weight:500;border-bottom:1px solid rgba(240,192,64,0.2);padding-bottom:6px">グルテンは以下の食品に含まれています</div>
+      <div style="font-size:10.5px;color:var(--muted);margin-bottom:9px">Gluten can be found in:</div>
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🌾</span><span>小麦 <span style="color:var(--muted)">(Wheat)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🌾</span><span>大麦 <span style="color:var(--muted)">(Barley)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🌾</span><span>ライ麦 <span style="color:var(--muted)">(Rye)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🌾</span><span>スペルト小麦 <span style="color:var(--muted)">(Spelt)</span></span></div>
+        <div style="display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--border);padding-top:7px">
+          <div style="display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--paper)"><span>🌾</span><div><div>オート麦 <span style="color:var(--muted)">(Oats)</span></div><div style="font-size:10px;color:var(--muted);margin-top:1px">(グルテンフリー認証済みでない場合)</div><div style="font-size:10px;color:var(--muted)">(unless certified gluten-free)</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pokarmy zawierające gluten -->
+    <div style="background:var(--card);border:1px solid rgba(240,192,64,0.25);border-radius:12px;padding:13px">
+      <div style="font-size:10px;letter-spacing:1.5px;color:#f5a623;text-transform:uppercase;margin-bottom:10px;font-weight:500;border-bottom:1px solid rgba(240,192,64,0.2);padding-bottom:6px">グルテンを含む一般的な食品</div>
+      <div style="font-size:10.5px;color:var(--muted);margin-bottom:9px">Common foods containing gluten:</div>
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🍞</span><span>パン <span style="color:var(--muted)">(Bread)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🍝</span><span>パスタ <span style="color:var(--muted)">(Pasta)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🫙</span><span>醤油 <span style="color:var(--muted)">(Soy sauce)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🫙</span><span>ソース <span style="color:var(--muted)">(Sauces)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🍤</span><span>揚げ物 <span style="color:var(--muted)">(Fried foods)</span></span></div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--paper)"><span>🧁</span><span>焼き菓子 <span style="color:var(--muted)">(Baked goods)</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ważna prośba -->
+  <div style="background:rgba(245,166,35,0.08);border:1px solid rgba(245,166,35,0.3);border-radius:14px;padding:16px 18px;margin-bottom:14px;display:flex;align-items:flex-start;gap:12px">
+    <div style="font-size:22px;flex-shrink:0;margin-top:2px">⚠️</div>
+    <div>
+      <div style="font-family:'Noto Serif JP';font-size:13.5px;color:var(--paper);line-height:1.7;margin-bottom:8px">
+        食事にグルテンが含まれていないこと、<br>調理中に混入しないようご確認ください。
+      </div>
+      <div style="font-size:12px;color:var(--soft);line-height:1.65;border-top:1px solid rgba(245,166,35,0.2);padding-top:8px">
+        Please make sure my food is gluten-free<br>and not cross-contaminated during preparation.<br>
+        <span style="color:var(--muted)">Proszę upewnić się, że moje jedzenie nie zawiera glutenu i nie jest zanieczyszczone podczas przygotowania.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Podziękowanie -->
+  <div style="text-align:center;padding:14px;background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:14px">
+    <div style="font-size:18px;margin-bottom:6px">🧡</div>
+    <div style="font-family:'Noto Serif JP';font-size:15px;color:var(--paper);margin-bottom:4px">ご協力ありがとうございます。</div>
+    <div style="font-size:12px;color:var(--soft)">Thank you for your understanding.</div>
+    <div style="font-size:11.5px;color:var(--muted);margin-top:2px">Dziękuję za zrozumienie.</div>
+  </div>
+
+  <!-- Wskazówki po polsku -->
+  <div class="tipsb">
+    <div class="tips-ttl">💡 Wskazówki dla celiakii w Japonii</div>
+    <div class="tr"><span class="ti-ico">🫙</span><span><strong>Sos sojowy (shoyu)</strong> zawiera pszenicę — proś o tamari (bezglutenowy odpowiednik)</span></div>
+    <div class="tr"><span class="ti-ico">🍜</span><span><strong>Ramen, udon, soba</strong> — uważaj! Soba (gryczana) może zawierać pszenicę lub być gotowana w tym samym garnku</span></div>
+    <div class="tr"><span class="ti-ico">🍣</span><span><strong>Sushi</strong> — ryż z octem i nori są zwykle bezpieczne, ale sprawdź sos ponzu i inne dodatki</span></div>
+    <div class="tr"><span class="ti-ico">🍱</span><span><strong>Tempura</strong> i <strong>karaage</strong> — zawierają mąkę! Wystrzegaj się potraw panierowanych</span></div>
+    <div class="tr"><span class="ti-ico">🏪</span><span><strong>Convenience stores</strong> — sprawdzaj skład; onigiri z ryżu są często bezpieczne</span></div>
+    <div class="tr"><span class="ti-ico">📱</span><span>Pokaż tę kartę obsłudze restauracji — japońscy kelnerzy potraktują ją bardzo poważnie</span></div>
+  </div>
+
+</section>
+
 <!-- BOTTOM NAV -->
 <nav class="bot-nav">
   <button class="nb active" id="nb-home" onclick="showPage('home',null,'nb-home')"><span class="ni">🗾</span><span>Plan</span></button>
@@ -518,7 +622,7 @@ body{background:var(--night);color:var(--paper);font-family:'DM Sans',sans-serif
 <div id="ofb">📴 Tryb offline · wszystkie dane załadowane lokalnie ✓</div>
 
 <script>
-const PAGES=['home','kyoto','osaka','kawaguchiko','tokyo','nagoya','checklist'];
+const PAGES=['home','kyoto','osaka','kawaguchiko','tokyo','nagoya','checklist','celiakia'];
 const CITIES=['kyoto','osaka','kawaguchiko','tokyo','nagoya'];
 const SK='jp25v3';
 
